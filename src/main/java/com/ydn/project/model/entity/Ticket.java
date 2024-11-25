@@ -30,7 +30,7 @@ public class Ticket {
 	@Column(nullable = false)
 	private LocalDate endTime;    // 活動結束時間
 	@Column(nullable = false)
-	private Boolean image;        // 圖片上傳
+	private String image;        // 圖片
 	@Column(nullable = false)
 	private String text;          // 節目簡述
 
