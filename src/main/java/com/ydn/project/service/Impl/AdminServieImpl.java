@@ -1,7 +1,11 @@
 package com.ydn.project.service.Impl;
 
+import java.util.List;
+import static java.util.stream.Collectors.toList;
 import java.util.Optional;
+import java.util.stream.Collector;
 
+import org.hibernate.annotations.Collate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -45,9 +49,25 @@ public class AdminServieImpl implements AdminService{
 
 	@Override
 	public void addAdmin(Long adId, String adAccount, String adPassword) {
-		AdminDto adminDto = new AdminDto(adId, adAccount);
+		Admin admin = new Admin(adId, adAccount, adPassword);
+		AdminDto adminDto = adminMapper.toDTO(admin);
 		addAdmin(adminDto);
 		
+	}
+
+	@Override
+	public List<AdminDto> getAllAdmins() {
+		return adminRepositoryJdbc.findAll()
+				.stream()
+				.map(adminMapper::toDTO)
+				.collect(toList());
+	}
+
+	@Override
+	public AdminDto getAdminById(Long adId) {
+		Admin admin = adminRepositoryJdbc.findById(adId)
+				.orElseThrow(() -> new AdminException("找不到此管理員: ID: " + adId));
+		return adminMapper.toDTO(admin);
 	}
 
 }

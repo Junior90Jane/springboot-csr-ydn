@@ -1,5 +1,7 @@
 package com.ydn.project.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -7,7 +9,9 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,10 +36,25 @@ DELETE /rest/admin/{adId}   刪除指定管理員      adId (路徑參數，房�
 @RestController
 @RequestMapping("/rest/admin")
 @CrossOrigin(origins = {"http://localhost:9090"}, allowCredentials = "true")
-public class AdminController {
+public class AdminRestController {
 	
 	@Autowired
 	private AdminService adminService;
+	
+	// 取得所有會員
+	@GetMapping
+	public ResponseEntity<ApiResponse<List<AdminDto>>> getAdmins(){
+		List<AdminDto> adminDtos = adminService.getAllAdmins();
+		String message = adminDtos.isEmpty() ? "Admin 查無資料" : "Admin 查詢多筆成功";
+		return ResponseEntity.ok(ApiResponse.success(message, adminDtos));
+	}
+	
+	// 取得單筆
+	@GetMapping("/{adId}")
+	public ResponseEntity<ApiResponse<AdminDto>> getAdmin(@PathVariable Long adId){
+		AdminDto adminDto = adminService.getAdminById(adId);
+		return ResponseEntity.ok(ApiResponse.success("查詢單筆成功", adminDto));
+	}
 	
 	
 	// 新增管理員
@@ -44,6 +63,5 @@ public class AdminController {
 		adminService.addAdmin(adminDto);
 		return ResponseEntity.ok(ApiResponse.success("Room 新增成功", adminDto));
 	}
-
-
+	
 }

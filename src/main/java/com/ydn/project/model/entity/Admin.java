@@ -21,7 +21,6 @@ public class Admin {
 	private Long adId;         // 管理者ID
 	@Column(nullable = false)
 	private String adAccount;  // 管理者帳號
-	@Column(nullable = false)
 	private String adPassword; // 管理者密碼
 
 }
