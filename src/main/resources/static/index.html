@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- No-Catch -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Management with RESTful API(Native JS)</title>
+    <!-- ? 放 Math.random() 可以防止 css catch -->
+    <link rel="stylesheet" href="./css/index.css?" + Math.random() + "">
+</head>
+
+<body>
+    	<!-- 網頁內容 -->
+		<div id="root">
+			<h1>Admin Management</h1>
+			
+			<!-- 房間列表 -->
+			<h2>Admin List</h2>
+			<ul id="#"></ul>
+			
+			<!-- 新增房間表單 -->
+			<h2>Add Admin</h2>
+			<div>
+				Admin Id: <input type="text" id="adId" placeholder="Admin Id"><p />
+				Admin Account: <input type="text" id="adAccount" placeholder="Admin Account"><p />
+				Admin Password: <input type="text" id="adPassword" placeholder="Admin Password"><p />
+				<button onclick="addAdmin()">Add</button><p />
+				<div id="addResult"></div>
+			</div>
+        </div>
+
+</body>
+
+</html>
