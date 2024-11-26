@@ -1,4 +1,4 @@
-//  獲取 DOM 元素 - 查詢使用者
+// 獲取 DOM 元素 - 查詢使用者
 const adminList = document.getElementById('adminList');
 // 獲取 DOM 元素 - 新增使用者
 const adIdInput = document.getElementById('adId');
@@ -39,21 +39,22 @@ const displayAdmins = (admins) => {
 
 // 新增管理者
 const addAdmin = async () => {
-    const adId = adIdInput.value;
     const adAccount = adAccountInput.value;
+    console.log(adAccount);
     const adPassword = adPasswordInput.value;
+    console.log(adPassword);
 
     // 檢查資料
-    if(!adId || !adAccount || !adPassword){
-        addResultText.textContent = '請輸入 id, account 與 password';
+    if (!adAccount || !adPassword) {
+        addResultText.textContent = '請輸入 account 與 password';
         return;
     }
 
     // 遠端新增程序
-    try{
-        const adminDto = {
-            adId: adId,
-            adAccount: adAccount
+    try {
+        const admin = {
+            adAccount: adAccount,
+            adPassword: adPassword
         };
 
         const response = await fetch('http://localhost:8899/rest/admin', {
@@ -61,27 +62,33 @@ const addAdmin = async () => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(adminDto)
+            body: JSON.stringify(admin)
         });
 
+        // 解析後端回應
         const apiResponse = await response.json();
-		alert(apiResponse.message);
-        //addResultText.textContent = apiResponse.message;
-		
 
-		if(response.ok) {
-            // 重新查詢管理員列表資料
-            fetchAdmins(); 
+        if (response.ok) {
+            // 顯示成功訊息
+            alert(`新增成功！ID: ${apiResponse.adId}`);
+            addResultText.textContent = `新增成功！ID: ${apiResponse.adId}`;
+
+            // 更新管理員列表
+            fetchAdmins();
+
             // 清空新增管理員的表單欄位
-            adIdInput.value = '';
             adAccountInput.value = '';
-            adPasswordInput.value = '';	
+            adPasswordInput.value = '';
+        } else {
+            // 處理後端返回的錯誤訊息
+            addResultText.textContent = `錯誤：${apiResponse.message}`;
         }
-        
-    } catch(e) {
+    } catch (e) {
         console.error('遠端資料存取錯誤:', e);
+        addResultText.textContent = '遠端資料存取錯誤，請稍後再試';
     }
-}
+};
+
 
 
 
