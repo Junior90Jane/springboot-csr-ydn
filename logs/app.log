@@ -5702,3 +5702,756 @@ java.lang.IllegalArgumentException: The given id must not be null
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
+2024-11-26T20:47:20.388+08:00  INFO 26128 --- [springboot-csr-ydn] [RMI TCP Connection(24)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-26T20:47:20.392+08:00  INFO 26128 --- [springboot-csr-ydn] [RMI TCP Connection(24)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-26T20:47:20.399+08:00  INFO 26128 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-26T20:47:20.412+08:00  INFO 26128 --- [springboot-csr-ydn] [RMI TCP Connection(24)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T20:47:20.415+08:00  INFO 26128 --- [springboot-csr-ydn] [RMI TCP Connection(24)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-26T20:47:20.442+08:00  INFO 26128 --- [springboot-csr-ydn] [RMI TCP Connection(24)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-26T20:47:23.971+08:00  INFO 15064 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 15064 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
+2024-11-26T20:47:23.974+08:00  INFO 15064 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-26T20:47:25.078+08:00  INFO 15064 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26T20:47:25.186+08:00  INFO 15064 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interface.
+2024-11-26T20:47:25.990+08:00  INFO 15064 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8899 (http)
+2024-11-26T20:47:26.019+08:00  INFO 15064 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-26T20:47:26.020+08:00  INFO 15064 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-26T20:47:26.107+08:00  INFO 15064 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-26T20:47:26.108+08:00  INFO 15064 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2060 ms
+2024-11-26T20:47:26.353+08:00  INFO 15064 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26T20:47:26.481+08:00  INFO 15064 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-26T20:47:26.574+08:00  INFO 15064 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-26T20:47:27.043+08:00  INFO 15064 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26T20:47:27.094+08:00  INFO 15064 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-26T20:47:27.967+08:00  INFO 15064 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7da77305
+2024-11-26T20:47:27.970+08:00  INFO 15064 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-26T20:47:28.474+08:00  INFO 15064 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-26T20:47:31.385+08:00  INFO 15064 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26T20:47:31.946+08:00  INFO 15064 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T20:47:33.102+08:00  WARN 15064 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26T20:47:33.782+08:00  INFO 15064 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8899 (http) with context path '/'
+2024-11-26T20:47:33.800+08:00  INFO 15064 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 10.489 seconds (process running for 11.555)
+2024-11-26T20:47:41.265+08:00  INFO 15064 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26T20:47:41.265+08:00  INFO 15064 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-26T20:47:41.267+08:00  INFO 15064 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-26T20:47:42.387+08:00 ERROR 15064 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.ydn.project.exception.admin.AdminAlreadyExistsException: 新增失敗: 帳號 jane123 已存在] with root cause
+
+com.ydn.project.exception.admin.AdminAlreadyExistsException: 新增失敗: 帳號 jane123 已存在
+	at com.ydn.project.service.Impl.AdminServieImpl.addAdmin(AdminServieImpl.java:40) ~[classes/:na]
+	at com.ydn.project.controller.AdminRestController.appendAdmin(AdminRestController.java:66) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-11-26T20:47:48.340+08:00 ERROR 15064 --- [springboot-csr-ydn] [http-nio-8899-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.ydn.project.exception.admin.AdminAlreadyExistsException: 新增失敗: 帳號 jane123 已存在] with root cause
+
+com.ydn.project.exception.admin.AdminAlreadyExistsException: 新增失敗: 帳號 jane123 已存在
+	at com.ydn.project.service.Impl.AdminServieImpl.addAdmin(AdminServieImpl.java:40) ~[classes/:na]
+	at com.ydn.project.controller.AdminRestController.appendAdmin(AdminRestController.java:66) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-11-26T20:47:50.467+08:00 ERROR 15064 --- [springboot-csr-ydn] [http-nio-8899-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.ydn.project.exception.admin.AdminAlreadyExistsException: 新增失敗: 帳號 jane123 已存在] with root cause
+
+com.ydn.project.exception.admin.AdminAlreadyExistsException: 新增失敗: 帳號 jane123 已存在
+	at com.ydn.project.service.Impl.AdminServieImpl.addAdmin(AdminServieImpl.java:40) ~[classes/:na]
+	at com.ydn.project.controller.AdminRestController.appendAdmin(AdminRestController.java:66) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-11-26T20:47:51.593+08:00 ERROR 15064 --- [springboot-csr-ydn] [http-nio-8899-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.ydn.project.exception.admin.AdminAlreadyExistsException: 新增失敗: 帳號 jane123 已存在] with root cause
+
+com.ydn.project.exception.admin.AdminAlreadyExistsException: 新增失敗: 帳號 jane123 已存在
+	at com.ydn.project.service.Impl.AdminServieImpl.addAdmin(AdminServieImpl.java:40) ~[classes/:na]
+	at com.ydn.project.controller.AdminRestController.appendAdmin(AdminRestController.java:66) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-11-26T20:49:41.015+08:00 ERROR 15064 --- [springboot-csr-ydn] [http-nio-8899-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.ydn.project.exception.admin.AdminAlreadyExistsException: 新增失敗: 帳號 jane123 已存在] with root cause
+
+com.ydn.project.exception.admin.AdminAlreadyExistsException: 新增失敗: 帳號 jane123 已存在
+	at com.ydn.project.service.Impl.AdminServieImpl.addAdmin(AdminServieImpl.java:40) ~[classes/:na]
+	at com.ydn.project.controller.AdminRestController.appendAdmin(AdminRestController.java:66) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-11-26T21:01:37.493+08:00  INFO 15064 --- [springboot-csr-ydn] [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-26T21:01:37.503+08:00  INFO 15064 --- [springboot-csr-ydn] [RMI TCP Connection(21)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-26T21:01:37.511+08:00  INFO 15064 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-26T21:01:37.518+08:00  INFO 15064 --- [springboot-csr-ydn] [RMI TCP Connection(21)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:01:37.521+08:00  INFO 15064 --- [springboot-csr-ydn] [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-26T21:01:37.621+08:00  INFO 15064 --- [springboot-csr-ydn] [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-26T21:01:41.634+08:00  INFO 23368 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 23368 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
+2024-11-26T21:01:41.636+08:00  INFO 23368 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-26T21:01:42.542+08:00  INFO 23368 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26T21:01:42.623+08:00  INFO 23368 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-11-26T21:01:43.307+08:00  INFO 23368 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8899 (http)
+2024-11-26T21:01:43.329+08:00  INFO 23368 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-26T21:01:43.330+08:00  INFO 23368 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-26T21:01:43.402+08:00  INFO 23368 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-26T21:01:43.403+08:00  INFO 23368 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1696 ms
+2024-11-26T21:01:43.585+08:00  INFO 23368 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26T21:01:43.681+08:00  INFO 23368 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-26T21:01:43.732+08:00  INFO 23368 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-26T21:01:44.148+08:00  INFO 23368 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26T21:01:44.195+08:00  INFO 23368 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-26T21:01:45.061+08:00  INFO 23368 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46894dc5
+2024-11-26T21:01:56.651+08:00  INFO 23368 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-26T21:01:57.016+08:00  INFO 23368 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-26T21:01:58.646+08:00  INFO 23368 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26T21:02:00.103+08:00  INFO 23368 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:02:00.634+08:00  WARN 23368 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26T21:02:01.191+08:00  INFO 23368 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8899 (http) with context path '/'
+2024-11-26T21:02:01.207+08:00  INFO 23368 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 20.206 seconds (process running for 21.314)
+2024-11-26T21:02:21.008+08:00  INFO 23368 --- [springboot-csr-ydn] [http-nio-8899-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26T21:02:21.009+08:00  INFO 23368 --- [springboot-csr-ydn] [http-nio-8899-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-26T21:02:21.013+08:00  INFO 23368 --- [springboot-csr-ydn] [http-nio-8899-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-26T21:13:12.681+08:00  INFO 23368 --- [springboot-csr-ydn] [RMI TCP Connection(23)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-26T21:13:12.686+08:00  INFO 23368 --- [springboot-csr-ydn] [RMI TCP Connection(23)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-26T21:13:12.697+08:00  INFO 23368 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-26T21:13:12.701+08:00  INFO 23368 --- [springboot-csr-ydn] [RMI TCP Connection(23)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:13:12.705+08:00  INFO 23368 --- [springboot-csr-ydn] [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-26T21:13:12.766+08:00  INFO 23368 --- [springboot-csr-ydn] [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-26T21:13:16.228+08:00  INFO 24992 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 24992 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
+2024-11-26T21:13:16.231+08:00  INFO 24992 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-26T21:13:17.273+08:00  INFO 24992 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26T21:13:17.358+08:00  INFO 24992 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interface.
+2024-11-26T21:13:17.991+08:00  INFO 24992 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8899 (http)
+2024-11-26T21:13:18.014+08:00  INFO 24992 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-26T21:13:18.014+08:00  INFO 24992 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-26T21:13:18.095+08:00  INFO 24992 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-26T21:13:18.096+08:00  INFO 24992 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1790 ms
+2024-11-26T21:13:18.304+08:00  INFO 24992 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26T21:13:18.407+08:00  INFO 24992 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-26T21:13:18.465+08:00  INFO 24992 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-26T21:13:18.887+08:00  INFO 24992 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26T21:13:18.933+08:00  INFO 24992 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-26T21:13:19.724+08:00  INFO 24992 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@605eb072
+2024-11-26T21:13:19.729+08:00  INFO 24992 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-26T21:13:19.899+08:00  INFO 24992 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-26T21:13:21.295+08:00  INFO 24992 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26T21:13:21.653+08:00  INFO 24992 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:13:22.131+08:00  WARN 24992 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26T21:13:22.617+08:00  INFO 24992 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8899 (http) with context path '/'
+2024-11-26T21:13:22.633+08:00  INFO 24992 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 6.988 seconds (process running for 7.916)
+2024-11-26T21:13:26.978+08:00  INFO 24992 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26T21:13:26.979+08:00  INFO 24992 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-26T21:13:26.981+08:00  INFO 24992 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-26T21:13:27.239+08:00 ERROR 24992 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	The method success(String, T, Long) in the type ApiResponse is not applicable for the arguments (String, List<AdminDto>)
+] with root cause
+
+java.lang.Error: Unresolved compilation problem: 
+	The method success(String, T, Long) in the type ApiResponse is not applicable for the arguments (String, List<AdminDto>)
+
+	at com.ydn.project.controller.AdminRestController.getAdmins(AdminRestController.java:52) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-11-26T21:22:09.470+08:00  INFO 24992 --- [springboot-csr-ydn] [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-26T21:22:09.476+08:00  INFO 24992 --- [springboot-csr-ydn] [RMI TCP Connection(18)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-26T21:22:09.485+08:00  INFO 24992 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-26T21:22:09.496+08:00  INFO 24992 --- [springboot-csr-ydn] [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:22:09.500+08:00  INFO 24992 --- [springboot-csr-ydn] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-26T21:22:09.625+08:00  INFO 24992 --- [springboot-csr-ydn] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-26T21:22:26.275+08:00  INFO 25564 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 25564 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
+2024-11-26T21:22:26.278+08:00  INFO 25564 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-26T21:22:28.462+08:00  INFO 25564 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26T21:22:28.801+08:00  INFO 25564 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 323 ms. Found 1 JPA repository interface.
+2024-11-26T21:22:29.529+08:00  INFO 25564 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8899 (http)
+2024-11-26T21:22:29.552+08:00  INFO 25564 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-26T21:22:29.552+08:00  INFO 25564 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-26T21:22:29.830+08:00  INFO 25564 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-26T21:22:29.831+08:00  INFO 25564 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3470 ms
+2024-11-26T21:22:30.306+08:00  INFO 25564 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26T21:22:30.461+08:00  INFO 25564 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-26T21:22:30.519+08:00  INFO 25564 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-26T21:22:30.965+08:00  INFO 25564 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26T21:22:31.012+08:00  INFO 25564 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-26T21:22:32.192+08:00  INFO 25564 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2520aa05
+2024-11-26T21:22:32.197+08:00  INFO 25564 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-26T21:22:32.779+08:00  INFO 25564 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-26T21:22:34.336+08:00  INFO 25564 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26T21:22:34.885+08:00  INFO 25564 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:22:35.395+08:00  WARN 25564 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26T21:22:49.596+08:00  INFO 25564 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8899 (http) with context path '/'
+2024-11-26T21:22:49.609+08:00  INFO 25564 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 24.211 seconds (process running for 28.197)
+2024-11-26T21:23:25.159+08:00  INFO 25564 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26T21:23:25.160+08:00  INFO 25564 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-26T21:23:25.161+08:00  INFO 25564 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-26T21:23:25.227+08:00  WARN 25564 --- [springboot-csr-ydn] [http-nio-8899-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'adId' for method parameter type Long is not present]
+2024-11-26T21:23:58.532+08:00  WARN 25564 --- [springboot-csr-ydn] [http-nio-8899-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'adId' for method parameter type Long is not present]
+2024-11-26T21:27:18.854+08:00  INFO 25564 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-26T21:27:19.034+08:00  INFO 25564 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-26T21:27:19.547+08:00  INFO 25564 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-26T21:27:19.572+08:00  INFO 25564 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:27:19.579+08:00  INFO 25564 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-26T21:27:20.042+08:00  INFO 25564 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-26T21:27:23.749+08:00  INFO 24016 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 24016 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
+2024-11-26T21:27:23.753+08:00  INFO 24016 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-26T21:27:25.040+08:00  INFO 24016 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26T21:27:25.161+08:00  INFO 24016 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interface.
+2024-11-26T21:27:26.202+08:00  INFO 24016 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8899 (http)
+2024-11-26T21:27:26.233+08:00  INFO 24016 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-26T21:27:26.233+08:00  INFO 24016 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-26T21:27:26.368+08:00  INFO 24016 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-26T21:27:26.368+08:00  INFO 24016 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2522 ms
+2024-11-26T21:27:26.751+08:00  INFO 24016 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26T21:27:26.893+08:00  INFO 24016 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-26T21:27:26.972+08:00  INFO 24016 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-26T21:27:27.586+08:00  INFO 24016 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26T21:27:27.673+08:00  INFO 24016 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-26T21:27:29.642+08:00  INFO 24016 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@704c3bdf
+2024-11-26T21:27:29.645+08:00  INFO 24016 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-26T21:27:32.002+08:00  INFO 24016 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-26T21:27:35.310+08:00  INFO 24016 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26T21:27:38.154+08:00  INFO 24016 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:27:38.833+08:00  WARN 24016 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26T21:27:39.466+08:00  INFO 24016 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8899 (http) with context path '/'
+2024-11-26T21:27:39.493+08:00  INFO 24016 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 16.466 seconds (process running for 17.562)
+2024-11-26T21:27:40.328+08:00  INFO 24016 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26T21:27:40.329+08:00  INFO 24016 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-26T21:27:40.331+08:00  INFO 24016 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-26T21:27:43.145+08:00  WARN 24016 --- [springboot-csr-ydn] [http-nio-8899-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'adId' for method parameter type Long is not present]
+2024-11-26T21:28:45.759+08:00  INFO 24016 --- [springboot-csr-ydn] [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-26T21:28:45.765+08:00  INFO 24016 --- [springboot-csr-ydn] [RMI TCP Connection(8)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-26T21:28:45.775+08:00  INFO 24016 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-26T21:28:45.782+08:00  INFO 24016 --- [springboot-csr-ydn] [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:28:45.786+08:00  INFO 24016 --- [springboot-csr-ydn] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-26T21:28:45.806+08:00  INFO 24016 --- [springboot-csr-ydn] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-26T21:28:49.064+08:00  INFO 19964 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 19964 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
+2024-11-26T21:28:49.068+08:00  INFO 19964 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-26T21:28:49.954+08:00  INFO 19964 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26T21:28:50.029+08:00  INFO 19964 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2024-11-26T21:28:50.665+08:00  INFO 19964 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8899 (http)
+2024-11-26T21:28:50.686+08:00  INFO 19964 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-26T21:28:50.687+08:00  INFO 19964 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-26T21:28:50.766+08:00  INFO 19964 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-26T21:28:50.766+08:00  INFO 19964 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1622 ms
+2024-11-26T21:28:50.952+08:00  INFO 19964 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26T21:28:51.020+08:00  INFO 19964 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-26T21:28:51.061+08:00  INFO 19964 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-26T21:28:51.528+08:00  INFO 19964 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26T21:28:51.566+08:00  INFO 19964 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-26T21:28:52.126+08:00  INFO 19964 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67dc6b48
+2024-11-26T21:28:52.130+08:00  INFO 19964 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-26T21:28:52.297+08:00  INFO 19964 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-26T21:28:53.646+08:00  INFO 19964 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26T21:28:53.885+08:00  INFO 19964 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:28:54.621+08:00  WARN 19964 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26T21:28:55.074+08:00  INFO 19964 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8899 (http) with context path '/'
+2024-11-26T21:28:55.085+08:00  INFO 19964 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 6.578 seconds (process running for 7.52)
+2024-11-26T21:29:08.901+08:00  INFO 19964 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26T21:29:08.902+08:00  INFO 19964 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-26T21:29:08.904+08:00  INFO 19964 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-26T21:29:09.104+08:00  WARN 19964 --- [springboot-csr-ydn] [http-nio-8899-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'adId' for method parameter type Long is not present]
+2024-11-26T21:34:17.244+08:00  INFO 19964 --- [springboot-csr-ydn] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-26T21:34:17.249+08:00  INFO 19964 --- [springboot-csr-ydn] [RMI TCP Connection(12)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-26T21:34:17.255+08:00  INFO 19964 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-26T21:34:17.262+08:00  INFO 19964 --- [springboot-csr-ydn] [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:34:17.266+08:00  INFO 19964 --- [springboot-csr-ydn] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-26T21:34:17.875+08:00  INFO 19964 --- [springboot-csr-ydn] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-26T21:34:26.033+08:00  INFO 23788 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 23788 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
+2024-11-26T21:34:26.036+08:00  INFO 23788 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-26T21:34:27.190+08:00  INFO 23788 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26T21:34:27.377+08:00  INFO 23788 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 162 ms. Found 1 JPA repository interface.
+2024-11-26T21:34:28.199+08:00  INFO 23788 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8899 (http)
+2024-11-26T21:34:28.218+08:00  INFO 23788 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-26T21:34:28.219+08:00  INFO 23788 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-26T21:34:28.297+08:00  INFO 23788 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-26T21:34:28.298+08:00  INFO 23788 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2201 ms
+2024-11-26T21:34:28.521+08:00  INFO 23788 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26T21:34:28.624+08:00  INFO 23788 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-26T21:34:28.682+08:00  INFO 23788 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-26T21:34:29.196+08:00  INFO 23788 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26T21:34:29.242+08:00  INFO 23788 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-26T21:34:30.019+08:00  INFO 23788 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fc7255c
+2024-11-26T21:34:30.022+08:00  INFO 23788 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-26T21:34:30.408+08:00  INFO 23788 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-26T21:34:32.016+08:00  INFO 23788 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26T21:34:32.693+08:00  INFO 23788 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:34:33.203+08:00  WARN 23788 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26T21:34:33.883+08:00  INFO 23788 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8899 (http) with context path '/'
+2024-11-26T21:34:33.900+08:00  INFO 23788 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 8.433 seconds (process running for 10.002)
+2024-11-26T21:34:38.623+08:00  INFO 23788 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26T21:34:38.623+08:00  INFO 23788 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-26T21:34:38.625+08:00  INFO 23788 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-26T21:34:54.900+08:00  WARN 23788 --- [springboot-csr-ydn] [http-nio-8899-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'adId' for method parameter type Long is not present]
+2024-11-26T21:46:03.976+08:00  INFO 23788 --- [springboot-csr-ydn] [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-26T21:46:03.981+08:00  INFO 23788 --- [springboot-csr-ydn] [RMI TCP Connection(18)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-26T21:46:03.988+08:00  INFO 23788 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-26T21:46:03.994+08:00  INFO 23788 --- [springboot-csr-ydn] [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:46:03.997+08:00  INFO 23788 --- [springboot-csr-ydn] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-26T21:46:04.012+08:00  INFO 23788 --- [springboot-csr-ydn] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-26T21:46:07.464+08:00  INFO 20316 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 20316 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
+2024-11-26T21:46:07.468+08:00  INFO 20316 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-26T21:46:08.636+08:00  INFO 20316 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26T21:46:08.754+08:00  INFO 20316 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interface.
+2024-11-26T21:46:09.452+08:00  INFO 20316 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8899 (http)
+2024-11-26T21:46:09.475+08:00  INFO 20316 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-26T21:46:09.475+08:00  INFO 20316 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-26T21:46:09.558+08:00  INFO 20316 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-26T21:46:09.559+08:00  INFO 20316 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2005 ms
+2024-11-26T21:46:09.767+08:00  INFO 20316 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26T21:46:09.853+08:00  INFO 20316 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-26T21:46:09.903+08:00  INFO 20316 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-26T21:46:10.282+08:00  INFO 20316 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26T21:46:10.330+08:00  INFO 20316 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-26T21:46:10.994+08:00  INFO 20316 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c67395
+2024-11-26T21:46:10.998+08:00  INFO 20316 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-26T21:46:11.189+08:00  INFO 20316 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-26T21:46:12.623+08:00  INFO 20316 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26T21:46:12.884+08:00  INFO 20316 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:46:13.451+08:00  WARN 20316 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26T21:46:14.031+08:00  INFO 20316 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8899 (http) with context path '/'
+2024-11-26T21:46:14.049+08:00  INFO 20316 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 7.259 seconds (process running for 8.383)
+2024-11-26T21:46:22.347+08:00  INFO 20316 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26T21:46:22.348+08:00  INFO 20316 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-26T21:46:22.359+08:00  INFO 20316 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2024-11-26T21:46:22.956+08:00  WARN 20316 --- [springboot-csr-ydn] [http-nio-8899-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'adId' for method parameter type Long is not present]
+2024-11-26T21:48:34.366+08:00  INFO 20316 --- [springboot-csr-ydn] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-26T21:48:34.371+08:00  INFO 20316 --- [springboot-csr-ydn] [RMI TCP Connection(12)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-26T21:48:34.378+08:00  INFO 20316 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-26T21:48:34.391+08:00  INFO 20316 --- [springboot-csr-ydn] [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:48:34.394+08:00  INFO 20316 --- [springboot-csr-ydn] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-26T21:48:34.438+08:00  INFO 20316 --- [springboot-csr-ydn] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-26T21:48:37.527+08:00  INFO 17836 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 17836 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
+2024-11-26T21:48:37.532+08:00  INFO 17836 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-26T21:48:38.474+08:00  INFO 17836 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26T21:48:38.557+08:00  INFO 17836 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-11-26T21:48:39.222+08:00  INFO 17836 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8899 (http)
+2024-11-26T21:48:39.246+08:00  INFO 17836 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-26T21:48:39.246+08:00  INFO 17836 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-26T21:48:39.362+08:00  INFO 17836 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-26T21:48:39.363+08:00  INFO 17836 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1753 ms
+2024-11-26T21:48:39.568+08:00  INFO 17836 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26T21:48:39.668+08:00  INFO 17836 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-26T21:48:39.722+08:00  INFO 17836 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-26T21:48:40.144+08:00  INFO 17836 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26T21:48:40.190+08:00  INFO 17836 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-26T21:48:40.837+08:00  INFO 17836 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@100807ca
+2024-11-26T21:48:40.842+08:00  INFO 17836 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-26T21:48:41.000+08:00  INFO 17836 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-26T21:48:42.402+08:00  INFO 17836 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26T21:48:42.558+08:00  INFO 17836 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:48:43.083+08:00  WARN 17836 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26T21:48:43.506+08:00  INFO 17836 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8899 (http) with context path '/'
+2024-11-26T21:48:43.516+08:00  INFO 17836 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 6.565 seconds (process running for 7.379)
+2024-11-26T21:48:58.987+08:00  INFO 17836 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26T21:48:58.987+08:00  INFO 17836 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-26T21:48:58.989+08:00  INFO 17836 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-26T21:50:59.453+08:00  INFO 17836 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-26T21:50:59.458+08:00  INFO 17836 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-26T21:50:59.465+08:00  INFO 17836 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-26T21:50:59.470+08:00  INFO 17836 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:50:59.473+08:00  INFO 17836 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-26T21:50:59.487+08:00  INFO 17836 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-26T21:51:02.686+08:00  INFO 17776 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 17776 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
+2024-11-26T21:51:02.689+08:00  INFO 17776 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-26T21:51:03.614+08:00  INFO 17776 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26T21:51:03.699+08:00  INFO 17776 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interface.
+2024-11-26T21:51:04.319+08:00  INFO 17776 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8899 (http)
+2024-11-26T21:51:04.342+08:00  INFO 17776 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-26T21:51:04.342+08:00  INFO 17776 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-26T21:51:04.421+08:00  INFO 17776 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-26T21:51:04.422+08:00  INFO 17776 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1657 ms
+2024-11-26T21:51:04.624+08:00  INFO 17776 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26T21:51:04.702+08:00  INFO 17776 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-26T21:51:04.752+08:00  INFO 17776 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-26T21:51:05.111+08:00  INFO 17776 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26T21:51:05.154+08:00  INFO 17776 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-26T21:51:05.551+08:00  INFO 17776 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79ba0285
+2024-11-26T21:51:05.553+08:00  INFO 17776 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-26T21:51:05.789+08:00  INFO 17776 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-26T21:51:07.185+08:00  INFO 17776 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26T21:51:07.398+08:00  INFO 17776 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:51:07.857+08:00  WARN 17776 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26T21:51:08.331+08:00  INFO 17776 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8899 (http) with context path '/'
+2024-11-26T21:51:08.344+08:00  INFO 17776 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 6.228 seconds (process running for 7.221)
+2024-11-26T21:51:31.436+08:00  INFO 17776 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26T21:51:31.439+08:00  INFO 17776 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-26T21:51:31.450+08:00  INFO 17776 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-11-26T21:51:31.650+08:00  WARN 17776 --- [springboot-csr-ydn] [http-nio-8899-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'adId' for method parameter type Long is not present]
+2024-11-26T21:51:41.699+08:00  WARN 17776 --- [springboot-csr-ydn] [http-nio-8899-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'adId' for method parameter type Long is not present]
+2024-11-26T21:54:58.773+08:00  INFO 17776 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-26T21:54:58.778+08:00  INFO 17776 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-26T21:54:58.785+08:00  INFO 17776 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-26T21:54:58.793+08:00  INFO 17776 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:54:58.796+08:00  INFO 17776 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-26T21:54:58.910+08:00  INFO 17776 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-26T21:55:03.594+08:00  INFO 10488 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 10488 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
+2024-11-26T21:55:03.597+08:00  INFO 10488 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-26T21:55:04.791+08:00  INFO 10488 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26T21:55:04.871+08:00  INFO 10488 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
+2024-11-26T21:55:05.616+08:00  INFO 10488 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8899 (http)
+2024-11-26T21:55:05.640+08:00  INFO 10488 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-26T21:55:05.640+08:00  INFO 10488 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-26T21:55:05.729+08:00  INFO 10488 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-26T21:55:05.730+08:00  INFO 10488 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2045 ms
+2024-11-26T21:55:05.923+08:00  INFO 10488 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26T21:55:06.021+08:00  INFO 10488 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-26T21:55:06.071+08:00  INFO 10488 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-26T21:55:06.504+08:00  INFO 10488 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26T21:55:06.546+08:00  INFO 10488 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-26T21:55:07.357+08:00  INFO 10488 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26865b57
+2024-11-26T21:55:07.361+08:00  INFO 10488 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-26T21:55:07.561+08:00  INFO 10488 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-26T21:55:08.966+08:00  INFO 10488 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26T21:55:09.248+08:00  INFO 10488 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26T21:55:09.746+08:00  WARN 10488 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26T21:55:10.237+08:00  INFO 10488 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8899 (http) with context path '/'
+2024-11-26T21:55:10.249+08:00  INFO 10488 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 7.412 seconds (process running for 8.384)
+2024-11-26T21:55:13.350+08:00  INFO 10488 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26T21:55:13.350+08:00  INFO 10488 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-26T21:55:13.354+08:00  INFO 10488 --- [springboot-csr-ydn] [http-nio-8899-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
