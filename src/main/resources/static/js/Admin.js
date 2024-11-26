@@ -12,7 +12,11 @@ const fetchAdmins = async () => {
         const apiResponse = await response.json();
         if (response.ok) {
             console.log(apiResponse);
-            displayAdmins(apiResponse);
+            if (Array.isArray(apiResponse.data)) {
+                displayAdmins(apiResponse.data); // 假設後端返回的資料有一個 data 欄位是陣列
+            } else {
+                console.error('後端資料格式錯誤：data 不是陣列');
+            }
         } else {
             console.error('後端返回錯誤:', apiResponse.message);
         }
@@ -27,7 +31,7 @@ const displayAdmins = (admins) => {
 
     admins.forEach((admin) => {
         const listItem = document.createElement('li');
-        listItem.textContent = `編號: ${admin.id} 帳號: ${admin.username}`;
+        listItem.textContent = `編號: ${admin.adId} 帳號: ${admin.adAccount}`;
         adminList.appendChild(listItem);
     });
 };
@@ -46,8 +50,8 @@ const addAdmin = async () => {
     // 遠端新增程序
     try {
         const admin = {
-            username: adAccount,
-            password: adPassword,
+            adAccount: adAccount,
+            adPassword: adPassword,
         };
 
         const response = await fetch('http://localhost:8899/rest/admin', {
@@ -62,8 +66,8 @@ const addAdmin = async () => {
 
         if (response.ok) {
             // 顯示成功訊息
-            alert(`新增成功！ID: ${apiResponse.id}`);
-            addResultText.textContent = `新增成功！ID: ${apiResponse.id}`;
+            alert(`新增成功！ID: ${apiResponse.adId}`);
+            addResultText.textContent = `新增成功！ID: ${apiResponse.adId}`;
 
             // 更新管理員列表
             fetchAdmins();
