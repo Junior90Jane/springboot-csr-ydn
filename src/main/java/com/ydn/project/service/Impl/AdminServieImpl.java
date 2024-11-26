@@ -30,16 +30,15 @@ public class AdminServieImpl implements AdminService{
 	
 	
 	@Override
-	public void addAdmin(AdminDto adminDto) {
+	public void addAdmin(Admin admin) {
 		// 判斷該管理員是否存在
-		Optional<Admin> optAdmin = adminRepository.findById(adminDto.getAdId());
+		Optional<Admin> optAdmin = adminRepository.findById(admin.getAdId());
 		// 房間已存在
 		if(optAdmin.isPresent()) {
-			throw new AdminAlreadyExistsException("新增失敗: " + adminDto.getAdId() + " 已存在");
+			throw new AdminAlreadyExistsException("新增失敗: " + admin.getAdId() + " 已存在");
 			
 		}
 		
-		Admin admin = adminMapper.toEntity(adminDto);
 		int rowcount = adminRepositoryJdbc.save(admin);
 		if(rowcount == 0) {
 			throw new AdminException("無法新增! ");
@@ -49,10 +48,8 @@ public class AdminServieImpl implements AdminService{
 
 	@Override
 	public void addAdmin(Long adId, String adAccount, String adPassword) {
-		Admin admin = new Admin(adId, adAccount, adPassword);
-		AdminDto adminDto = adminMapper.toDTO(admin);
-		addAdmin(adminDto);
-		
+		Admin admin = new Admin();
+		addAdmin(admin);
 	}
 
 	@Override

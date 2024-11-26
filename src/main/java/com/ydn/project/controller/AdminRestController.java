@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ydn.project.model.dto.AdminDto;
+import com.ydn.project.model.entity.Admin;
 import com.ydn.project.response.ApiResponse;
 import com.ydn.project.service.AdminService;
 
@@ -59,9 +60,9 @@ public class AdminRestController {
 	
 	// 新增管理員
 	@PostMapping
-	public ResponseEntity<ApiResponse<AdminDto>> addAdmin(@RequestBody AdminDto adminDto){
-		adminService.addAdmin(adminDto);
-		return ResponseEntity.ok(ApiResponse.success("Room 新增成功", adminDto));
+	public ResponseEntity<ApiResponse<Admin>> appendAdmin(@RequestBody @Valid Admin admin){
+		adminService.addAdmin(admin);
+		return ResponseEntity.ok(ApiResponse.success("Admin 新增成功", admin));
 	}
 	
 }
