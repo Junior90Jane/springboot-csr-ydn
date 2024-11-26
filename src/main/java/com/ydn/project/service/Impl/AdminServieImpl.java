@@ -29,28 +29,35 @@ public class AdminServieImpl implements AdminService{
 	private AdminRepositoryJdbc adminRepositoryJdbc;
 	
 	
-	@Override
-	public void addAdmin(Admin admin) {
-		// 判斷該管理員是否存在
-		Optional<Admin> optAdmin = adminRepository.findById(admin.getAdId());
-		// 房間已存在
-		if(optAdmin.isPresent()) {
-			throw new AdminAlreadyExistsException("新增失敗: " + admin.getAdId() + " 已存在");
-			
-		}
-		
-		int rowcount = adminRepositoryJdbc.save(admin);
-		if(rowcount == 0) {
-			throw new AdminException("無法新增! ");
-		}
-		
-	}
+	 /**
+     * 新增管理員
+     */
+    @Override
+    public void addAdmin(Admin admin) {
+        // 檢查是否已存在相同帳號
+        Optional<Admin> optAdmin = adminRepository.findByAdAccount(admin.getAdAccount());
+        if (optAdmin.isPresent()) {
+            throw new AdminAlreadyExistsException("新增失敗: 帳號 " + admin.getAdAccount() + " 已存在");
+        }
 
-	@Override
-	public void addAdmin(Long adId, String adAccount, String adPassword) {
-		Admin admin = new Admin();
-		addAdmin(admin);
-	}
+        // 儲存資料，資料庫自動生成 adId
+        Admin savedAdmin = adminRepository.save(admin);
+        if (savedAdmin.getAdId() == null) {
+            throw new AdminException("無法新增! 自增 ID 未生成");
+        }
+    }
+
+    /**
+     * 使用帳號與密碼新增管理員
+     */
+    @Override
+    public void addAdmin(Long adId, String adAccount, String adPassword) {
+        Admin admin = new Admin();
+        admin.setAdAccount(adAccount);
+        admin.setAdPassword(adPassword);
+        addAdmin(admin);
+    }
+
 
 	@Override
 	public List<AdminDto> getAllAdmins() {
@@ -66,5 +73,8 @@ public class AdminServieImpl implements AdminService{
 				.orElseThrow(() -> new AdminException("找不到此管理員: ID: " + adId));
 		return adminMapper.toDTO(admin);
 	}
+
+
+
 
 }
