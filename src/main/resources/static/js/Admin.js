@@ -1,6 +1,7 @@
 // 獲取 DOM 元素 - 查詢使用者
 const adminList = document.getElementById('adminList');
 // 獲取 DOM 元素 - 新增使用者
+const adInput = document.getElementById('adId');
 const adAccountInput = document.getElementById('adAccount');
 const adPasswordInput = document.getElementById('adPassword');
 const addResultText = document.getElementById('addResult');
@@ -66,8 +67,7 @@ const addAdmin = async () => {
 
         if (response.ok) {
             // 顯示成功訊息
-            alert(`新增成功！ID: ${apiResponse.adId}`);
-            addResultText.textContent = `新增成功！ID: ${apiResponse.adId}`;
+            alert(`新增成功！`);
 
             // 更新管理員列表
             fetchAdmins();
