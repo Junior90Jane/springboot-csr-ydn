@@ -2,43 +2,54 @@
 <html lang="en">
 
 <head>
-    <!-- No-Catch -->
+    <!-- Prevent Caching -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Management with RESTful API(Native JS)</title>
-    <!-- ? 放 Math.random() 可以防止 css catch -->
-    <link rel="stylesheet" href="./css/index.css?" + Math.random() + "">
+    <title>Admin Management with RESTful API (Native JS)</title>
+    <!-- Randomized CSS to Prevent Caching -->
+    <link rel="stylesheet" href="./css/index.css?" + Math.random()>
 </head>
 
 <body>
-    <!-- 網頁內容 -->
+    <!-- Root Container -->
     <div id="root">
         <h1>Admin Management</h1>
 
-        <!-- 房間列表 -->
+        <!-- 管理員列表 -->
         <h2>Admin List</h2>
         <ul id="adminList"></ul>
 
-        <!-- 新增房間表單 -->
+        <!-- 新增管理員表單 -->
         <h2>Add Admin</h2>
-        <div>
-        	Admin ID: <input id="addResult" >
+        <form id="addAdminForm">
+            <!-- 自動生成的 Admin ID -->
+            <label for="adId">Admin ID (Auto-Generated):</label>
+            <input type="text" id="adId" placeholder="ID will be auto-generated" disabled>
             <p />
-            Admin Account: <input type="text" id="adAccount" placeholder="Admin Account">
+
+            <!-- 管理員帳號 -->
+            <label for="adAccount">Admin Account:</label>
+            <input type="text" id="adAccount" placeholder="Enter Admin Account" required>
             <p />
-            Admin Password: <input type="password" id="adPassword" placeholder="Admin Password">
+
+            <!-- 管理員密碼 -->
+            <label for="adPassword">Admin Password:</label>
+            <input type="password" id="adPassword" placeholder="Enter Admin Password" required>
             <p />
-            <button onclick="addAdmin()">Add</button>
-            <p />
-            <div id="addResult"></div>
-        </div>
+
+            <!-- 新增按鈕 -->
+            <button type="button" onclick="addAdmin()">Add Admin</button>
+        </form>
+
+        <!-- 結果顯示區 -->
+        <div id="addResult" style="margin-top: 1rem; color: green;"></div>
     </div>
 
-
-    <script src="./js/Admin.js?" + Math.random() + ""></script>
+    <!-- 引入 JavaScript -->
+    <script src="./js/Admin.js?" + Math.random()></script>
 
 </body>
 
