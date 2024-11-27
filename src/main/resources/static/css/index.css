@@ -1,33 +1,113 @@
-/* 視窗遮罩背景 */
-.modal-overlay {
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #f39800;
+    height: 70px;
+    width: 100%;
     position: fixed;
+    z-index: 1050;
+    /* 确保导航栏在轮播图之上 */
+}
+
+nav {
+    position: fixed;
+    margin: 10px;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none; /* 初始隱藏 */
+    /* z-index: 1050; */
+    /* 保证导航栏和下拉菜单父级在轮播图之上 */
+}
+
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    background-color: #ffffff;
+    color: #f39800;
+}
+
+.nav-link:focus {
+    background-color: #f39800;
+    color: #ffffff;
+}
+
+.btn-outline-danger {
+    color: rgb(255, 255, 255);
+    border-color: rgb(218 51 68);
+    background-color: rgb(218 51 68);
+}
+
+.btn-outline-danger:hover {
+    color: rgb(218 51 68);
+    border-color: rgb(255, 255, 255);
+    background-color: #ffffff;
+}
+
+.dropdown-menu {
+    z-index: 1100;
+    /* 确保下拉菜单高于导航栏和轮播图 */
+    position: absolute;
+    /* 让菜单浮动 */
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明遮罩 */
+    z-index: 1050;
+}
+
+/* main 區塊 */
+
+.main1 {
+    padding-top: 70px;
+    /* 避免内容被导航栏遮挡 */
+}
+
+
+.carousel {
+    z-index: 3;
+    /* 确保轮播图在最低层 */
+}
+
+.carousel-inner img {
+    height: 450px;
+    /* 自定义轮播图高度 */
+    object-fit: cover;
+    /* 保持图片比例，不拉伸 */
+}
+
+.main2 {
+    margin: 30px;
+}
+
+.main3 {
+    margin: 30px;
+}
+
+.btn {
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: rgb(5, 6, 6);
+    color: rgb(151, 139, 139);
+    height: 60px;
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* 彈出視窗 */
-.modal {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 400px;
-    text-align: center;
-}
-
-/* 關閉按鈕 */
-.close-btn {
-    float: right;
-    cursor: pointer;
-    font-size: 20px;
-    color: #999;
-}
-
-.close-btn:hover {
-    color: #333;
+    font-size: 14px;
 }
