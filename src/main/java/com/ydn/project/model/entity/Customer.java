@@ -24,9 +24,9 @@ public class Customer {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long ctId;          // 顧客id
 	@Column(nullable = false, unique = true)
-	private Integer ctAccount;  // 顧客帳號
+	private String ctAccount;  // 顧客帳號
 	@Column(nullable = false)
-	private Integer ctPassword; // 顧客密碼
+	private String ctPassword; // 顧客密碼
 	@Column(nullable = false)
 	private String gender;      // 顧客性別
 	@Column(nullable = false)
