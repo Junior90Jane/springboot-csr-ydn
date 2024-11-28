@@ -21,9 +21,9 @@ import lombok.NoArgsConstructor;
 public class Admin {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY) // room_id 自動生成，過號不補
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long adId;         // 管理者ID
-	@Column(nullable = false)
+	@Column(nullable = false, unique = true)
 	private String adAccount;  // 管理者帳號
 	@Column(nullable = false)
 	private String adPassword; // 管理者密碼
