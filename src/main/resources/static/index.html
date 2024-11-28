@@ -49,33 +49,35 @@
                 <!-- 後臺管理登入 -->
 
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">後臺管理</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">管理員登入</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">帳號：</label>
-                                        <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="recipient-password" class="col-form-label">密碼：</label>
-                                        <textarea type="text" class="form-control" id="recipient-password"></textarea>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Send message</button>
-                            </div>
-                        </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">管理員登入</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="adAccount" class="col-form-label">帳號：</label>
+                        <input type="text" id="adAccount" class="form-control" placeholder="Enter Admin Account" required />
                     </div>
-                </div>
+                    <div class="mb-3">
+                        <label for="adPassword" class="col-form-label">密碼：</label>
+                        <input type="password" id="adPassword" class="form-control" placeholder="Enter Admin Password" required />
+                    </div>
+                    <!-- 結果顯示區 -->
+                    <div id="addResult" style="margin-top: 1rem;"></div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary">註冊管理員身分</button>
+                <button type="button" class="btn btn-primary" onclick="addAdmin()">確認</button>
+            </div>
+        </div>
+    </div>
+</div>
+                
 
 
                 <button type="button" class="btn btn-primary position-relative">
@@ -238,6 +240,8 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <script src="./modal.js"></script>
+     <!-- 引入 Admin.js -->
+    <script src="./js/modal.js?" + Math.random()></script>
 
 </body>
 
