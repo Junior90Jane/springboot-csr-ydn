@@ -11,6 +11,7 @@ import com.ydn.project.exception.customer.CustomerException;
 import com.ydn.project.mapper.CustomerMapper;
 import com.ydn.project.model.dto.CustomerDto;
 import com.ydn.project.model.entity.Customer;
+import com.ydn.project.model.entity.Customer.Gender;
 import com.ydn.project.repository.CustomerRepository;
 import com.ydn.project.repository.CustomerRepositoryJdbc;
 import com.ydn.project.service.CustomerService;
@@ -47,13 +48,13 @@ public class CustomerServiceImpl implements CustomerService{
 		}
 		
 		Customer savaedCustomer = customerRepository.save(customer);
-        if (savaedCustomer.getCtId() == null) {
+        if (savaedCustomer.getCtAccount() == null) {
             throw new CustomerException("無法新增! 自增 ID 未生成");
         }
 	}
 
 	@Override
-	public void addCustomer(String ctAccount, String ctPassword, String gender, String age, String ctEmail, String ctPhone) {
+	public void addCustomer(String ctAccount, String ctPassword, Gender gender, String age, String ctEmail, String ctPhone) {
 		Customer customer = new Customer();
 		customer.setCtAccount(ctAccount);
 		customer.setCtPassword(ctPassword);

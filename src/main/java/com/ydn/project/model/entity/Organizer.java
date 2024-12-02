@@ -32,7 +32,5 @@ public class Organizer {
 	private String ogEmail;    // 主辦方電郵
 	@Column(nullable = false)
 	private String ogPhone;    // 主辦方電話
-	@Column(nullable = false)
-	private String role;       // 主辦方權限
 
 }

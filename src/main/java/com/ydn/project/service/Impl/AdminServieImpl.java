@@ -47,9 +47,7 @@ public class AdminServieImpl implements AdminService{
         }
     }
 
-    /**
-     * 使用帳號與密碼新增管理員
-     */
+    
     @Override
     public void addAdmin(Long adId, String adAccount, String adPassword) {
         Admin admin = new Admin();

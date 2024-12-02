@@ -1,22 +1,29 @@
-2024-11-28T02:28:20.954+08:00  WARN 13700 --- [springboot-csr-ydn] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h31s984ms95µs800ns).
-2024-11-28T08:15:39.207+08:00  WARN 13700 --- [springboot-csr-ydn] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h47m24s207ms902µs500ns).
-2024-11-28T08:35:24.939+08:00  INFO 14656 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 14656 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
-2024-11-28T08:35:24.943+08:00  INFO 14656 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
-2024-11-28T08:35:25.887+08:00  INFO 14656 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-28T08:35:25.981+08:00  INFO 14656 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interface.
-2024-11-28T08:35:26.711+08:00  INFO 14656 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8900 (http)
-2024-11-28T08:35:26.731+08:00  INFO 14656 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-28T08:35:26.731+08:00  INFO 14656 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-11-28T08:35:26.816+08:00  INFO 14656 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-28T08:35:26.817+08:00  INFO 14656 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1802 ms
-2024-11-28T08:35:27.033+08:00  INFO 14656 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-28T08:35:27.158+08:00  INFO 14656 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2024-11-28T08:35:27.235+08:00  INFO 14656 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-28T08:35:27.660+08:00  INFO 14656 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-28T08:35:27.705+08:00  INFO 14656 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-28T08:35:28.595+08:00  INFO 14656 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d3ad37a
-2024-11-28T08:35:28.599+08:00  INFO 14656 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-28T08:35:29.233+08:00  INFO 14656 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2024-11-29T09:37:23.929+08:00  WARN 19236 --- [springboot-csr-ydn] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h38m54s961ms608µs400ns).
+2024-11-29T12:16:49.188+08:00  WARN 19236 --- [springboot-csr-ydn] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m48s238ms981µs900ns).
+2024-11-29T13:54:23.755+08:00  WARN 19236 --- [springboot-csr-ydn] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m55s276ms206µs400ns).
+2024-11-29T14:00:31.928+08:00  INFO 19236 --- [springboot-csr-ydn] [RMI TCP Connection(246)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-29T14:00:47.938+08:00  INFO 19236 --- [springboot-csr-ydn] [RMI TCP Connection(246)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-29T14:00:51.538+08:00  INFO 19236 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-29T14:01:00.932+08:00  INFO 19236 --- [springboot-csr-ydn] [RMI TCP Connection(246)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-29T14:01:05.801+08:00  INFO 19236 --- [springboot-csr-ydn] [RMI TCP Connection(246)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-29T14:01:06.434+08:00  INFO 19236 --- [springboot-csr-ydn] [RMI TCP Connection(246)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-29T14:04:17.325+08:00  INFO 3524 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 3524 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
+2024-11-29T14:04:17.328+08:00  INFO 3524 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-29T14:04:18.678+08:00  INFO 3524 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-29T14:04:18.792+08:00  INFO 3524 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 3 JPA repository interfaces.
+2024-11-29T14:04:19.568+08:00  INFO 3524 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8989 (http)
+2024-11-29T14:04:19.682+08:00  INFO 3524 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-29T14:04:19.683+08:00  INFO 3524 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-29T14:04:19.853+08:00  INFO 3524 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-29T14:04:19.854+08:00  INFO 3524 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2436 ms
+2024-11-29T14:04:20.288+08:00  INFO 3524 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-29T14:04:20.449+08:00  INFO 3524 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-29T14:04:20.541+08:00  INFO 3524 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-29T14:04:21.213+08:00  INFO 3524 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-29T14:04:21.264+08:00  INFO 3524 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-29T14:04:21.887+08:00  INFO 3524 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e7b0bec
+2024-11-29T14:04:21.891+08:00  INFO 3524 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-29T14:04:22.970+08:00  INFO 3524 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.39
@@ -24,119 +31,11 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2024-11-28T08:35:30.671+08:00  INFO 14656 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-28T08:35:31.008+08:00  INFO 14656 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-28T08:35:31.559+08:00  WARN 14656 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-28T08:35:31.994+08:00  INFO 14656 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8900 (http) with context path '/'
-2024-11-28T08:35:32.006+08:00  INFO 14656 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 7.635 seconds (process running for 8.499)
-2024-11-28T08:35:42.561+08:00  INFO 14656 --- [springboot-csr-ydn] [http-nio-8900-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-28T08:35:42.561+08:00  INFO 14656 --- [springboot-csr-ydn] [http-nio-8900-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-28T08:35:42.563+08:00  INFO 14656 --- [springboot-csr-ydn] [http-nio-8900-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-11-28T08:39:41.061+08:00  INFO 14656 --- [springboot-csr-ydn] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2024-11-28T08:39:41.065+08:00  INFO 14656 --- [springboot-csr-ydn] [RMI TCP Connection(13)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2024-11-28T08:39:41.075+08:00  INFO 14656 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2024-11-28T08:39:41.081+08:00  INFO 14656 --- [springboot-csr-ydn] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-28T08:39:41.083+08:00  INFO 14656 --- [springboot-csr-ydn] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-28T08:39:41.103+08:00  INFO 14656 --- [springboot-csr-ydn] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-28T08:51:21.670+08:00  INFO 1548 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 1548 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
-2024-11-28T08:51:21.673+08:00  INFO 1548 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
-2024-11-28T08:51:22.832+08:00  INFO 1548 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-28T08:51:22.960+08:00  INFO 1548 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 1 JPA repository interface.
-2024-11-28T08:51:23.733+08:00  INFO 1548 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8989 (http)
-2024-11-28T08:51:23.762+08:00  INFO 1548 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-28T08:51:23.763+08:00  INFO 1548 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-11-28T08:51:23.869+08:00  INFO 1548 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-28T08:51:23.870+08:00  INFO 1548 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2092 ms
-2024-11-28T08:51:24.121+08:00  INFO 1548 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-28T08:51:24.246+08:00  INFO 1548 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2024-11-28T08:51:24.319+08:00  INFO 1548 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-28T08:51:25.056+08:00  INFO 1548 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-28T08:51:25.119+08:00  INFO 1548 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-28T08:51:25.841+08:00  INFO 1548 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79ba0285
-2024-11-28T08:51:25.846+08:00  INFO 1548 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-28T08:51:26.059+08:00  INFO 1548 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.39
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2024-11-28T08:51:27.442+08:00  INFO 1548 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-28T08:51:27.713+08:00  INFO 1548 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-28T08:51:28.283+08:00  WARN 1548 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-28T08:51:28.771+08:00  INFO 1548 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8989 (http) with context path '/'
-2024-11-28T08:51:28.786+08:00  INFO 1548 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 7.739 seconds (process running for 8.889)
-2024-11-28T08:51:41.356+08:00  INFO 1548 --- [springboot-csr-ydn] [http-nio-8989-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-28T08:51:41.357+08:00  INFO 1548 --- [springboot-csr-ydn] [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-28T08:51:41.360+08:00  INFO 1548 --- [springboot-csr-ydn] [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2024-11-28T08:57:22.123+08:00  INFO 1548 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2024-11-28T08:57:22.128+08:00  INFO 1548 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2024-11-28T08:57:22.137+08:00  INFO 1548 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2024-11-28T08:57:22.142+08:00  INFO 1548 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-28T08:57:22.145+08:00  INFO 1548 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-28T08:57:22.167+08:00  INFO 1548 --- [springboot-csr-ydn] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-28T08:57:25.433+08:00  INFO 13776 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 13776 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
-2024-11-28T08:57:25.437+08:00  INFO 13776 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
-2024-11-28T08:57:26.622+08:00  INFO 13776 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-28T08:57:26.719+08:00  INFO 13776 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface.
-2024-11-28T08:57:27.702+08:00  INFO 13776 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8989 (http)
-2024-11-28T08:57:27.738+08:00  INFO 13776 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-28T08:57:27.739+08:00  INFO 13776 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-11-28T08:57:27.844+08:00  INFO 13776 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-28T08:57:27.844+08:00  INFO 13776 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2318 ms
-2024-11-28T08:57:28.063+08:00  INFO 13776 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-28T08:57:28.147+08:00  INFO 13776 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2024-11-28T08:57:28.207+08:00  INFO 13776 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-28T08:57:28.613+08:00  INFO 13776 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-28T08:57:28.660+08:00  INFO 13776 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-28T08:57:29.063+08:00  INFO 13776 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11cadb32
-2024-11-28T08:57:29.067+08:00  INFO 13776 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-28T08:57:29.198+08:00  INFO 13776 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.39
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2024-11-28T08:57:30.428+08:00  INFO 13776 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-28T08:57:30.816+08:00  INFO 13776 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-28T08:57:31.271+08:00  WARN 13776 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-28T08:57:31.699+08:00  INFO 13776 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8989 (http) with context path '/'
-2024-11-28T08:57:31.710+08:00  INFO 13776 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 7.124 seconds (process running for 8.145)
-2024-11-28T10:24:08.292+08:00  INFO 13776 --- [springboot-csr-ydn] [RMI TCP Connection(96)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2024-11-28T10:24:11.406+08:00  INFO 13776 --- [springboot-csr-ydn] [RMI TCP Connection(96)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2024-11-28T10:24:11.914+08:00  INFO 13776 --- [springboot-csr-ydn] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2024-11-28T10:24:12.526+08:00  INFO 13776 --- [springboot-csr-ydn] [RMI TCP Connection(96)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-28T10:24:13.730+08:00  INFO 13776 --- [springboot-csr-ydn] [RMI TCP Connection(96)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-28T10:24:14.179+08:00  INFO 13776 --- [springboot-csr-ydn] [RMI TCP Connection(96)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-28T10:24:22.895+08:00  INFO 5372 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Starting SpringbootCsrYdnApplication using Java 21.0.4 with PID 5372 (C:\Users\Jane78\git\springboot-csr-ydn\target\classes started by Jane78 in C:\Users\Jane78\git\springboot-csr-ydn)
-2024-11-28T10:24:22.899+08:00  INFO 5372 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : No active profile set, falling back to 1 default profile: "default"
-2024-11-28T10:24:24.263+08:00  INFO 5372 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-28T10:24:24.361+08:00  INFO 5372 --- [springboot-csr-ydn] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interface.
-2024-11-28T10:24:25.512+08:00  INFO 5372 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8989 (http)
-2024-11-28T10:24:25.548+08:00  INFO 5372 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-28T10:24:25.549+08:00  INFO 5372 --- [springboot-csr-ydn] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-11-28T10:24:25.657+08:00  INFO 5372 --- [springboot-csr-ydn] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-28T10:24:25.659+08:00  INFO 5372 --- [springboot-csr-ydn] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2668 ms
-2024-11-28T10:24:25.903+08:00  INFO 5372 --- [springboot-csr-ydn] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-28T10:24:26.039+08:00  INFO 5372 --- [springboot-csr-ydn] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2024-11-28T10:24:26.110+08:00  INFO 5372 --- [springboot-csr-ydn] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-28T10:24:26.628+08:00  INFO 5372 --- [springboot-csr-ydn] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-28T10:24:26.694+08:00  INFO 5372 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-28T10:24:27.995+08:00  INFO 5372 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12670e55
-2024-11-28T10:24:27.999+08:00  INFO 5372 --- [springboot-csr-ydn] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-28T10:24:28.470+08:00  INFO 5372 --- [springboot-csr-ydn] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.39
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2024-11-28T10:24:30.161+08:00  INFO 5372 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-28T10:24:35.659+08:00  INFO 5372 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-28T10:24:36.419+08:00  WARN 5372 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-28T10:24:37.240+08:00  INFO 5372 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8989 (http) with context path '/'
-2024-11-28T10:24:37.254+08:00  INFO 5372 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 15.041 seconds (process running for 16.277)
+2024-11-29T14:04:24.317+08:00  INFO 3524 --- [springboot-csr-ydn] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-29T14:04:25.540+08:00  INFO 3524 --- [springboot-csr-ydn] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-29T14:04:26.328+08:00  WARN 3524 --- [springboot-csr-ydn] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-29T14:04:26.971+08:00  INFO 3524 --- [springboot-csr-ydn] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8989 (http) with context path '/'
+2024-11-29T14:04:26.982+08:00  INFO 3524 --- [springboot-csr-ydn] [main] c.y.project.SpringbootCsrYdnApplication  : Started SpringbootCsrYdnApplication in 10.38 seconds (process running for 12.079)
+2024-11-29T14:05:32.236+08:00  INFO 3524 --- [springboot-csr-ydn] [http-nio-8989-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-29T14:05:32.236+08:00  INFO 3524 --- [springboot-csr-ydn] [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-29T14:05:32.238+08:00  INFO 3524 --- [springboot-csr-ydn] [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

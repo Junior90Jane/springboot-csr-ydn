@@ -1,18 +1,11 @@
 package com.ydn.project.controller;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,8 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ydn.project.model.dto.AdminDto;
 import com.ydn.project.model.entity.Admin;
+import com.ydn.project.model.entity.Customer;
+import com.ydn.project.model.entity.Organizer;
 import com.ydn.project.response.ApiResponse;
 import com.ydn.project.service.AdminService;
+import com.ydn.project.service.CustomerService;
+import com.ydn.project.service.OrganizerService;
 
 import jakarta.validation.Valid;
 
@@ -37,14 +34,35 @@ DELETE /rest/admin/{adId}   刪除指定管理員      adId (路徑參數，房�
 */
 
 @RestController
-@RequestMapping("/rest/admin")
+@RequestMapping("/rest/register")
 @CrossOrigin(origins = {"http://localhost:9090"}, allowCredentials = "true")
-public class AdminRestController {
+public class RegisterRestController {
 	
+	@Autowired
+	private CustomerService customerService;
+	@Autowired
+	private OrganizerService organizerService;
 	@Autowired
 	private AdminService adminService;
 	
-	// 取得所有會員
+	
+	
+	// 新增購票顧客
+	@PostMapping("/addCustomer")
+	public ResponseEntity<ApiResponse<Customer>> appendCustomer(@RequestBody @Valid Customer customer){
+		customerService.addCustomer(customer);
+		return ResponseEntity.ok(ApiResponse.success("Customer 新增成功! ", customer));
+	}
+	
+	
+	// 新增主辦單位
+	@PostMapping("/addOrganizer")
+	public ResponseEntity<ApiResponse<Organizer>> appendOrganizer(@RequestBody @Valid Organizer organizer){
+		organizerService.addOrganizer(organizer);
+		return ResponseEntity.ok(ApiResponse.success("organizer 新增成功! ", organizer));
+	}
+	
+	// 取得所有管理員
 	@GetMapping
 	public ResponseEntity<ApiResponse<List<AdminDto>>> getAdmins(){
 		List<AdminDto> adminDtos = adminService.getAllAdmins();
@@ -52,7 +70,7 @@ public class AdminRestController {
 		return ResponseEntity.ok(ApiResponse.success(message, adminDtos));
 	}
 	
-	// 取得單筆
+	// 取得單筆管理員
 	@GetMapping("/{adId}")
 	public ResponseEntity<ApiResponse<AdminDto>> getAdmin(@PathVariable Long adId){
 		AdminDto adminDto = adminService.getAdminById(adId);
@@ -66,5 +84,5 @@ public class AdminRestController {
 		adminService.addAdmin(admin);
 		return ResponseEntity.ok(ApiResponse.success("Admin 新增成功", admin));
 	}
-	
+
 }
