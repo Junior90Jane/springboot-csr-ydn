@@ -2,248 +2,279 @@
 <html lang="zh-TW">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ydn 售票網</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ydn 售票網</title>
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <ul class="nav nav-pills justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                        aria-expanded="false" aria-current="page" href="#">節目類別</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">展覽</a></li>
-                        <li><a class="dropdown-item" href="#">講座</a></li>
-                        <li><a class="dropdown-item" href="#">音樂</a></li>
-                        <li><a class="dropdown-item" href="#">戲劇</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                        aria-expanded="false" aria-current="page" href="#">購票會員</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">會員管理</a></li>
-                        <li><a class="dropdown-item" href="#">訂單查詢</a></li>
-                        <li><a class="dropdown-item" href="#">我的票夾</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                        aria-expanded="false" aria-current="page" href="#">主辦單位</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">會員管理</a></li>
-                        <li><a class="dropdown-item" href="#">上架申請</a></li>
-                        <li><a class="dropdown-item" href="#">申請紀錄</a></li>
-                        <li><a class="dropdown-item" href="#">活動回饋</a></li>
-                    </ul>
-                </li>
+	<header>
+		<nav>
+			<ul class="nav nav-pills justify-content-end">
+				<li class="nav-item"><a class="nav-link dropdown-toggle"
+					data-bs-toggle="dropdown" href="#" role="button"
+					aria-expanded="false" aria-current="page" href="#">節目類別</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">展覽</a></li>
+						<li><a class="dropdown-item" href="#">講座</a></li>
+						<li><a class="dropdown-item" href="#">音樂</a></li>
+						<li><a class="dropdown-item" href="#">戲劇</a></li>
+					</ul></li>
+				<li class="nav-item"><a class="nav-link dropdown-toggle"
+					data-bs-toggle="dropdown" href="#" role="button"
+					aria-expanded="false" aria-current="page" href="#">購票會員</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">會員管理</a></li>
+						<li><a class="dropdown-item" href="#">訂單查詢</a></li>
+						<li><a class="dropdown-item" href="#">我的票夾</a></li>
+					</ul></li>
+				<li class="nav-item"><a class="nav-link dropdown-toggle"
+					data-bs-toggle="dropdown" href="#" role="button"
+					aria-expanded="false" aria-current="page" href="#">主辦單位</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">會員管理</a></li>
+						<li><a class="dropdown-item" href="#">上架申請</a></li>
+						<li><a class="dropdown-item" href="#">申請紀錄</a></li>
+						<li><a class="dropdown-item" href="#">活動回饋</a></li>
+					</ul></li>
 
-                <!-- 後臺管理登入 -->
+				<!-- 後臺管理登入 -->
 
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">後臺管理</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">管理員登入</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="adAccount" class="col-form-label">帳號：</label>
-                        <input type="text" id="adAccount" class="form-control" placeholder="Enter Admin Account" required />
-                    </div>
-                    <div class="mb-3">
-                        <label for="adPassword" class="col-form-label">密碼：</label>
-                        <input type="password" id="adPassword" class="form-control" placeholder="Enter Admin Password" required />
-                    </div>
-                    <!-- 結果顯示區 -->
-                    <div id="addResult" style="margin-top: 1rem;"></div>
-                </form>
-            </div>
-            <div class="modal-footer">
-            	<a href="./register.html">
-                	<button type="button" class="btn btn-secondary">註冊會員</button>
-                </a>
-                <button type="button" class="btn btn-primary" onclick="addAdmin()">確認</button>
-            </div>
-        </div>
-    </div>
-</div>
-                
-
-
-                <button type="button" class="btn btn-primary position-relative">
-                    購物車
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                        0
-                        <span class="visually-hidden">unread messages</span>
-                    </span>
-                </button>
-                <a href="./admin.html">
-                <button type="button" class="btn btn-outline-danger">登入會員</button>
-                </a>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- 輪播圖區 -->
-    <main class="main1">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active opacity-85" data-bs-interval="10000">
-                    <img src="./image/mu/m1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item opacity-85" data-bs-interval="2000">
-                    <img src="./image/mu/m2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item opacity-85">
-                    <img src="./image/mu/m3.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </main>
-
-    <!-- 最新消息 -->
-
-    <main class="main2">
-        <!-- 標題顯示 -->
-        <h4 class="text-center"> 推薦節目一覽 </h4>
-
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-                <div class="card">
-                    <img src="./image/sh/d1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <button type="button" class="btn btn-outline-warning"> 了解更多 </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./image/sh/d2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <button type="button" class="btn btn-outline-warning"> 了解更多 </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./image/sh/d3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                        <button type="button" class="btn btn-outline-warning"> 了解更多 </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./image/sh/d4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <button type="button" class="btn btn-outline-warning"> 了解更多 </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- 常見問題 -->
-
-    <main class="main3">
-        <!-- 標題顯示 -->
-        <h4 class="text-center"> 常見問題 </h4>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Accordion Item #1
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Accordion Item #2
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                        this being filled with some actual content.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Accordion Item #3
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                        exciting happening here in terms of content, but just filling up the space to make it look, at
-                        least at first glance, a bit more representative of how this would look in a real-world
-                        application.</div>
-                </div>
-            </div>
-        </div>
-
-    </main>
+				<a href="./admin.html">
+					<button type="button" class="btn btn-outline-danger">後臺管理</button>
+				</a>
 
 
 
-    <footer>
-        <p>版權聲明置放處</p>
+				<button type="button" class="btn btn-primary position-relative">
+					購物車 <span
+						class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+						0 <span class="visually-hidden">unread messages</span>
+					</span>
+				</button>
 
-    </footer>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-    <script src="./modal.js"></script>
-     <!-- 引入 Admin.js -->
-    <script src="./js/modal.js?" + Math.random()></script>
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+					data-bs-target="#exampleModal">登入會員</button>
+				<div class="modal fade" id="exampleModal" tabindex="-1"
+					aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">管理員登入</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="mb-3">
+										<label for="adAccount" class="col-form-label">帳號：</label> <input
+											type="text" id="adAccount" class="form-control"
+											placeholder="Enter Admin Account" required />
+									</div>
+									<div class="mb-3">
+										<label for="adPassword" class="col-form-label">密碼：</label> <input
+											type="password" id="adPassword" class="form-control"
+											placeholder="Enter Admin Password" required />
+									</div>
+									<!-- 結果顯示區 -->
+									<div id="addResult" style="margin-top: 1rem;"></div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<a href="./register.html">
+									<button type="button" class="btn btn-secondary">註冊會員</button>
+								</a>
+								<button type="button" class="btn btn-primary"
+									onclick="addAdmin()">確認</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- 輪播圖區 -->
+	<main class="main1">
+		<div id="carouselExampleInterval" class="carousel slide"
+			data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active opacity-85"
+					data-bs-interval="10000">
+					<img src="./image/mu/m1.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item opacity-85" data-bs-interval="2000">
+					<img src="./image/mu/m2.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item opacity-85">
+					<img src="./image/mu/m3.jpg" class="d-block w-100" alt="...">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button"
+				data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button"
+				data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</main>
+
+	<!-- 最新消息 -->
+
+	<main class="main2">
+		<!-- 標題顯示 -->
+		<h4 class="text-center">推薦節目一覽</h4>
+
+		<div class="row row-cols-1 row-cols-md-2 g-4">
+			<div class="col">
+				<div class="card">
+					<img src="./image/sh/d1.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a longer card with supporting
+							text below as a natural lead-in to additional content. This
+							content is a little bit longer.</p>
+						<button type="button" class="btn btn-outline-warning">
+							了解更多</button>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="./image/sh/d2.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a longer card with supporting
+							text below as a natural lead-in to additional content. This
+							content is a little bit longer.</p>
+						<button type="button" class="btn btn-outline-warning">
+							了解更多</button>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="./image/sh/d3.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a longer card with supporting
+							text below as a natural lead-in to additional content.</p>
+						<button type="button" class="btn btn-outline-warning">
+							了解更多</button>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="./image/sh/d4.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a longer card with supporting
+							text below as a natural lead-in to additional content. This
+							content is a little bit longer.</p>
+						<button type="button" class="btn btn-outline-warning">
+							了解更多</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- 常見問題 -->
+
+	<main class="main3">
+		<!-- 標題顯示 -->
+		<h4 class="text-center">常見問題</h4>
+		<div class="accordion accordion-flush" id="accordionFlushExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingOne">
+					<button class="accordion-button collapsed" type="button"
+						data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+						aria-expanded="false" aria-controls="flush-collapseOne">
+						Accordion Item #1</button>
+				</h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse"
+					aria-labelledby="flush-headingOne"
+					data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						Placeholder content for this accordion, which is intended to
+						demonstrate the
+						<code>.accordion-flush</code>
+						class. This is the first item's accordion body.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingTwo">
+					<button class="accordion-button collapsed" type="button"
+						data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+						aria-expanded="false" aria-controls="flush-collapseTwo">
+						Accordion Item #2</button>
+				</h2>
+				<div id="flush-collapseTwo" class="accordion-collapse collapse"
+					aria-labelledby="flush-headingTwo"
+					data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						Placeholder content for this accordion, which is intended to
+						demonstrate the
+						<code>.accordion-flush</code>
+						class. This is the second item's accordion body. Let's imagine
+						this being filled with some actual content.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingThree">
+					<button class="accordion-button collapsed" type="button"
+						data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+						aria-expanded="false" aria-controls="flush-collapseThree">
+						Accordion Item #3</button>
+				</h2>
+				<div id="flush-collapseThree" class="accordion-collapse collapse"
+					aria-labelledby="flush-headingThree"
+					data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						Placeholder content for this accordion, which is intended to
+						demonstrate the
+						<code>.accordion-flush</code>
+						class. This is the third item's accordion body. Nothing more
+						exciting happening here in terms of content, but just filling up
+						the space to make it look, at least at first glance, a bit more
+						representative of how this would look in a real-world application.
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+
+
+	<footer>
+		<p>版權聲明置放處</p>
+
+	</footer>
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+		crossorigin="anonymous"></script>
+	<script src="./modal.js"></script>
+	<!-- 引入 Admin.js -->
+	<script src="./js/modal.js?" + Math.random()></script>
 
 </body>
 
