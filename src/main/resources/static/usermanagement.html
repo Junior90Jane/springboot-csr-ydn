@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<!-- No-Catch -->
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-	<meta http-equiv="Pragma" content="no-cache">
-	<meta http-equiv="Expires" content="0">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Usermanagement</title>
-	<!-- ? 放 Math.random() 可以防止 css catch -->
-	<link rel="stylesheet" href="./css/room.css?" + Math.random() + "">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="./css/room.css?"+ Math.random() + "">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 </head>
-
 <body>
-	<!-- 網頁內容 -->
-	<div>
-		<h1>User Management</h1>
+    <div>
+        <h1>User Management</h1>
 
-		<!-- 房間列表 -->
-		<h2>Room List</h2>
-		<ul id="userList"></ul>
-
-		
-
-	</div>
-	<!-- 引入自訂的 JavaScript 檔案 -->
-	<!-- ? 放 Math.random() 可以防止 js catch -->
-	<script src="./js/room.js?" + Math.random() + ""></script>
+        <h2>User List</h2>
+        <table id="organizerTableBody" class="display">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>帳號</th>
+                    <th>公司</th>
+                    <th>電郵</th>
+                    <th>電話</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 資料會由 JavaScript 自動填入 -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/usermanagement.js?"+ Math.random() + ""></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script>$(document).ready(function () {
+            $('#organizerTableBody').DataTable();
+        });</script>
 </body>
-
 </html>
