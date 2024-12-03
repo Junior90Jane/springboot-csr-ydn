@@ -39,7 +39,7 @@ public class AdminManagementRestController {
 	@GetMapping
 	public ResponseEntity<ApiResponse<List<OrganizerDto>>> getorganizers() {
 		List<OrganizerDto> organizerDtos = organizerService.getAllOrganizers();
-		String message = organizerDtos.isEmpty() ? "Room 查無資料" : "Room 查詢多筆成功";
+		String message = organizerDtos.isEmpty() ? "主辦單位，查無資料" : "主辦單位，查詢多筆成功";
 		return ResponseEntity.ok(ApiResponse.success(message, organizerDtos));
 	}
 
