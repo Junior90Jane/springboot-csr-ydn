@@ -1,5 +1,7 @@
 package com.ydn.project.service.Impl;
 
+import static java.util.stream.Collectors.toList;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -15,6 +17,7 @@ import com.ydn.project.model.dto.OrganizerDto;
 import com.ydn.project.model.entity.Customer;
 import com.ydn.project.model.entity.Organizer;
 import com.ydn.project.repository.OrganizerRepository;
+import com.ydn.project.repository.OrganizerRepositoryJdbc;
 import com.ydn.project.service.OrganizerService;
 
 @Service
@@ -24,13 +27,17 @@ public class OrganizerServiceImpl implements OrganizerService{
 	private OrganizerMapper organizerMapper;
 	@Autowired
 	private OrganizerRepository organizerRepository;
+	@Autowired
+	private OrganizerRepositoryJdbc organizerRepositoryJdbc;
 
 	@Override
 	public List<OrganizerDto> getAllOrganizers() {
-		// TODO Auto-generated method stub
-		return null;
+		return organizerRepositoryJdbc.findAll()
+				.stream()
+				.map(organizerMapper::toDto)
+				.collect(toList());
 	}
-
+	
 	@Override
 	public OrganizerDto getOrganizerByAccount(String ogAccount) {
 		// TODO Auto-generated method stub
