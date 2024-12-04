@@ -1,17 +1,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Management</title>
-    <link rel="stylesheet" href="./css/room.css?"+ Math.random() + "">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-	  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Management</title>
+<link rel="stylesheet" href="./css/room.css?"+ Math.random() + "">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 確保 nav 位於最上層 */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #f39800;
+    z-index: 9999; /* 確保在所有元素之上 */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+/* 回首頁按鈕 */
+.home-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: #ffffff;
+    color: #f39800;
+    border: 2px solid #f39800;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 10000; /* 確保按鈕不被遮擋 */
+}
+
+.home-button:hover {
+    background-color: #f39800;
+    color: #ffffff;
+}
+
+/* 導覽列連結樣式 */
+.nav-link {
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #ffffff;
+    color: #f39800;
+}
+
+.nav-link:focus {
+    background-color: #ffffff;
+    color: #f39800;
+}
+
+/* 下拉選單 */
+.dropdown-menu {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10000; /* 確保選單不被遮擋 */
+}
+
+.dropdown-item {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #f39800;
+    color: #ffffff;
+}
+
+/* 保留內容的上邊距，避免被 nav 遮擋 */
+body {
+    padding-top: 80px; /* 與 nav 高度一致，避免內容被遮住 */
+}
+
+/* 內容樣式 */
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+div {
+    margin: 20px auto;
+    max-width: 90%;
+    padding: 20px;
+}
+
+/* 表格樣式（適用於 DataTable） */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table thead th {
+    background-color: #f39800;
+    color: white;
+}
+</style>
 </head>
 <body>
+    <header>
+        <!-- 回首頁按鈕 -->
+        <a href="index.html" class="home-button">回首頁</a>
+        <nav>
+            <ul class="nav nav-pills justify-content-end">
+                <li class="nav-item"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">會員管理</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">新增會員</a></li>
+                        <li><a class="dropdown-item" href="#">編輯會員</a></li>
+                        <li><a class="dropdown-item" href="#">刪除會員</a></li>
+                    </ul></li>
+                <li class="nav-item"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">節目管理</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">新增節目</a></li>
+                        <li><a class="dropdown-item" href="#">修改節目</a></li>
+                        <li><a class="dropdown-item" href="#">刪除節目</a></li>
+                    </ul></li>
+                <li class="nav-item"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">審核紀錄</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">查看紀錄</a></li>
+                        <li><a class="dropdown-item" href="#">匯出紀錄</a></li>
+                    </ul></li>
+            </ul>
+        </nav>
+    </header>
+
     <div>
         <h1>User Management</h1>
 
@@ -32,11 +183,15 @@
             </tbody>
         </table>
     </div>
+
     <script src="./js/usermanagement.js?"+ Math.random() + ""></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <script>$(document).ready(function () {
+    <script>
+        $(document).ready(function () {
             $('#organizerTableBody').DataTable();
-        });</script>
+        });
+    </script>
 </body>
 </html>
