@@ -1,9 +1,9 @@
 package com.ydn.project.model.entity;
 
-import java.sql.Date;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -16,27 +16,29 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table (name = "organizers")
-public class Organizer {
+@Table (name = "feedbackfororganizer")
+public class FeedbackForOrganizer {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long organizerId;
+    private Long feedbackId;
+
+    @Column(nullable = false, length = 100)
+    private String programName;
 
     @Column(nullable = false, length = 50)
-    private String username;
+    private String programType;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Customer.AgeGroup ageGroup;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Customer.Gender gender;
 
     @Column(nullable = false)
-    private String passwordHash;
-    private String salt;
-
-    @Column(nullable = false, length = 100)
-    private String companyName;
-
-    @Column(nullable = false, length = 100)
-    private String email;
-
-    @Column(nullable = false, length = 15)
-    private String phoneNumber;
+    private Integer preferenceLevel;
+	
 
 }

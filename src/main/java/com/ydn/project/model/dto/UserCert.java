@@ -1,4 +1,6 @@
-package com.ydn.project.model.entity;
+package com.ydn.project.model.dto;
+
+import com.ydn.project.model.entity.Customer.Gender;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -14,20 +16,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table (name = "auditrecords")
-public class AuditRecord {
+@Table(name = "usercerts")
+public class UserCert {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long recordId;     // 審核id
+	private Long certId; 
 	@Column(nullable = false, unique = true)
-	private String adAccount;  // 管理員帳號
-	@Column(nullable = false)
-	private String ticketName; // 節目名稱
-	@Column(nullable = false)
-	private String status;     // 審核狀態
-	@Column(nullable = false)
-	private String text;       // 審核評論
-	
-
+	private String username; // 顧客帳號
 }

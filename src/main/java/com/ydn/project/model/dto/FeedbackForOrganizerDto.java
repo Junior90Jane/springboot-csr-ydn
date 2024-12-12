@@ -1,9 +1,11 @@
 package com.ydn.project.model.dto;
 
-import java.sql.Date;
+import com.ydn.project.model.entity.Customer;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -15,12 +17,14 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrganizerDto {
+public class FeedbackForOrganizerDto {
 	
-    private Long organizerId;
-    private String username;
-    private String companyName;
-    private String email;
-    private String phoneNumber;
+    private Long feedbackId;
+    private String programName;
+    private String programType;
+    private Customer.AgeGroup ageGroup;
+    private Customer.Gender gender;
+    private Integer preferenceLevel;
+	
 
 }

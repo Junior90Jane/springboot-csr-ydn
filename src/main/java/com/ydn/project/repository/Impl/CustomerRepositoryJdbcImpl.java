@@ -12,7 +12,8 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.ydn.project.model.entity.Admin;
+import com.ydn.project.model.dto.CustomerDto;
+import com.ydn.project.model.entity.AdminAccount;
 import com.ydn.project.model.entity.Customer;
 import com.ydn.project.repository.CustomerRepositoryJdbc;
 
@@ -21,51 +22,19 @@ import com.ydn.project.repository.CustomerRepositoryJdbc;
 public class CustomerRepositoryJdbcImpl implements CustomerRepositoryJdbc{
 
 	
-	private static final Logger logger = LoggerFactory.getLogger(AdminRepositoryJdbcImpl.class);
+	private static final Logger logger = LoggerFactory.getLogger(CustomerRepositoryJdbcImpl.class);
 	
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
-	@Value("${customers.sql.findAll}")
-	private String findAllSql;
-	@Value("${customers.sql.findByAccount}")
-	private String findByAccountSql;
-	@Value("${customers.sql.save}")
-	private String saveSql;
 	@Value("${customers.sql.update}")
 	private String updateSql;
-	@Value("${customers.sql.deleteByAccount}")
-	private String deleteByAccountSql;
 	
-	@Override
-	public List<Customer> findAll() {
-		return jdbcTemplate.query(findAllSql, new BeanPropertyRowMapper<>(Customer.class));
-	}
-
-	@Override
-	public Optional<Customer> findByAccount(String adAccount) {// 因為 queryForObject 若沒有找到資料會自動拋出例外, 所以要 try-catch 保護
-		try {
-			Customer customer = jdbcTemplate.queryForObject(findByAccountSql, new BeanPropertyRowMapper<>(Customer.class), adAccount);
-			return Optional.of(customer);
-		} catch (Exception e) {
-			logger.info(e.toString());
-		}
-		return Optional.empty();
-	}
-
-	@Override
-	public int save(Customer customers) {
-		return jdbcTemplate.update(saveSql, customers.getCtAccount(), customers.getCtPassword(), customers.getGender(), customers.getAge(), customers.getCtEmail(), customers.getCtPhone());
-	}
 
 	@Override
 	public int update(Customer customers) {
-		return jdbcTemplate.update(updateSql, customers.getCtPassword(), customers.getAge(), customers.getCtEmail(), customers.getCtPhone());
+		return jdbcTemplate.update(updateSql, customers.getPasswordHash(), customers.getAgeGroup(), customers.getEmail(), customers.getPhoneNumber());
 	}
 
-	@Override
-	public int deleteByAccount(String adAccount) {
-		return jdbcTemplate.update(deleteByAccountSql, adAccount);
-	}
 
 }

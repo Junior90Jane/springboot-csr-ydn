@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ydn.project.model.dto.OrganizerDto;
 import com.ydn.project.response.ApiResponse;
-import com.ydn.project.service.OrganizerService;
+import com.ydn.project.service.UserService;
 
 /**
 請求方法    URL 路徑                                  功能說明            請求參數              回應
@@ -33,12 +33,12 @@ DELETE   /rest/admin/{adId}   更新指定管理員資料   adId (路徑參數�
 public class AdminManagementRestController {
 	
 	@Autowired
-	private OrganizerService organizerService;
+	private UserService userService;
 	
 	// 取得所有主辦單位列表
 	@GetMapping
 	public ResponseEntity<ApiResponse<List<OrganizerDto>>> getorganizers() {
-		List<OrganizerDto> organizerDtos = organizerService.getAllOrganizers();
+		List<OrganizerDto> organizerDtos = userService.getAllOrganizers();
 		String message = organizerDtos.isEmpty() ? "主辦單位，查無資料" : "主辦單位，查詢多筆成功";
 		return ResponseEntity.ok(ApiResponse.success(message, organizerDtos));
 	}

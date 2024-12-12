@@ -18,14 +18,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 @Table (name = "admins")
-public class Admin {
+public class AdminAccount {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long adId;         // 管理者ID
-	@Column(nullable = false, unique = true)
-	private String adAccount;  // 管理者帳號
-	@Column(nullable = false)
-	private String adPassword; // 管理者密碼
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long adminId;
+
+    @Column(nullable = false, length = 50)
+    private String username;
+
+    @Column(nullable = false)
+    private String passwordHash;
 
 }

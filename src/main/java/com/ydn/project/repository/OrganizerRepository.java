@@ -10,6 +10,8 @@ import com.ydn.project.model.entity.Organizer;
 
 @Repository
 public interface OrganizerRepository extends JpaRepository<Organizer, Long>{
-	Optional<Organizer> findByOgAccount(String ogAccount);
+	
+	Optional<Organizer> findByUsername(String username);
+	int deleteByUsername(String username);
 
 }
