@@ -24,9 +24,6 @@ import com.ydn.project.service.CustomerService;
 public class CustomerServiceImpl implements CustomerService {
 	
 	@Autowired
-	private CustomerRepository userRepository;
-	
-	@Autowired
 	private ProductRepository productRepository;
 	
 	@Autowired
@@ -37,16 +34,17 @@ public class CustomerServiceImpl implements CustomerService {
 	
 	@Override
 	public Optional<CustomerDTO> findByUsername(String username) {
-		Optional<Customer> optCustomer = userRepository.findByUsername(username);
-		if(optCustomer.isEmpty()) Optional.empty();
-		// 利用 modelMapper 將 User 轉 UserDTO
-		CustomerDTO userDTO = modelMapper.map(optCustomer.get(), CustomerDTO.class);
-		return Optional.of(userDTO);
+		Optional<Customer> optCustomer = customerRepository.findByUsername(username);
+		if(optCustomer.isEmpty()) 
+			return Optional.empty();
+		// 利用 modelMapper 將 Cusotmer 轉 CusotmerDTO
+		CustomerDTO customerDTO = modelMapper.map(optCustomer.get(), CustomerDTO.class);
+		return Optional.of(customerDTO);
 	}
 
 	@Override
 	public Optional<CustomerDTO> login(LoginDTO loginDTO) {
-		Optional<Customer> optCustomer = userRepository.findByUsername(loginDTO.getUsername());
+		Optional<Customer> optCustomer = customerRepository.findByUsername(loginDTO.getUsername());
 		// 判斷密碼
 		if(optCustomer.isPresent() && optCustomer.get().getPassword().equals(loginDTO.getPassword())) {
 			return Optional.of(modelMapper.map(optCustomer.get(), CustomerDTO.class));

@@ -40,12 +40,12 @@ public class AuthController {
 	@PostMapping("/login")
 	public ResponseEntity<ApiResponse<LoginDTO>> login(@RequestBody LoginDTO loginDTO, HttpSession session) {
 		// login 判斷比對
-		Optional<CustomerDTO> optUserDTO = customerService.login(loginDTO);
-		if(optUserDTO.isEmpty()) {
+		Optional<CustomerDTO> optCustomerDTO = customerService.login(loginDTO);
+		if(optCustomerDTO.isEmpty()) {
 			return ResponseEntity.status(404).body(ApiResponse.error(404, "登入失敗"));
 		}
 		// 存入 HttpSession 中
-		session.setAttribute("userDTO", optUserDTO.get());
+		session.setAttribute("customerDTO", optCustomerDTO.get());
 		return ResponseEntity.ok(ApiResponse.success("登入成功", null));
 	}
 	
@@ -57,9 +57,9 @@ public class AuthController {
 	
 	@GetMapping("/isLoggedIn")
 	public ResponseEntity<ApiResponse<LoginDTO>> isLoggedIn(HttpSession session) {
-		CustomerDTO userDTO = (CustomerDTO)session.getAttribute("userDTO");
+		CustomerDTO customerDTO = (CustomerDTO)session.getAttribute("customerDTO");
 		LoginDTO loginDTO = new LoginDTO();
-		if(userDTO == null) {
+		if(customerDTO == null) {
 			loginDTO.setIsLoggedIn(false);
 			return ResponseEntity.ok(ApiResponse.success("無登入資訊", loginDTO));
 		} 
